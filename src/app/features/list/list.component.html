@@ -1,5 +1,12 @@
-<p>list works!</p>
-
 @for (produto of produtos; track produto.id) {
-  <p>{{ produto.titulo }}</p>
+<mat-card>
+  <mat-card-header>
+    <mat-card-title>{{ produto.titulo }}</mat-card-title>
+    <mat-card-subtitle> aqui vem a descricao </mat-card-subtitle>
+  </mat-card-header>
+  <mat-card-actions>
+    <button mat-button>Editar</button>
+    <button mat-button>Deletar</button>
+  </mat-card-actions>
+</mat-card>
 }
