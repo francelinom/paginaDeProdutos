@@ -1,9 +1,13 @@
 {
   "products": [
     {
-      "id": 1,
+      "id": "1",
       "titulo": "Product 1",
       "preco": 10.99
+    },
+    {
+      "id": "8fc5",
+      "titulo": "Testes"
     }
   ]
 }
