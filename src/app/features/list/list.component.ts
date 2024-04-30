@@ -5,7 +5,6 @@ import { ProductsService } from '../../shared/services/products.service';
 import { CardComponent } from './components/card/card.component';
 import { ActivatedRoute, Router, RouterLink } from '@angular/router';
 import { MatButtonModule } from '@angular/material/button';
-import { MatDialog } from '@angular/material/dialog';
 
 @Component({
   selector: 'app-list',
