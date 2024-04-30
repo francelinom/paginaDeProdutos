@@ -1,4 +1,4 @@
-import { Component, computed, input } from '@angular/core';
+import { Component, EventEmitter, Output, computed, input } from '@angular/core';
 import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { Product } from '../../../../shared/interfaces/product.interface';
@@ -12,6 +12,8 @@ import { Product } from '../../../../shared/interfaces/product.interface';
 })
 export class CardComponent {
   produto = input.required<Product>();
+
+  @Output() edit = new EventEmitter();
 
   tituloProduto = computed(() => this.produto().titulo);
 }
