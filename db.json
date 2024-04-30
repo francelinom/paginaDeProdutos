@@ -1,10 +1,6 @@
 {
   "products": [
     {
-      "titulo": "Product 1 Testes",
-      "id": "1"
-    },
-    {
       "titulo": "Testes editado 2",
       "id": "8fc5"
     },

@@ -62,7 +62,13 @@ export class ListComponent {
 
   onDelete(product: Product) {
     this.matDialog.open(DialogConfirmationComponent).afterClosed().subscribe(result => {
-
+      if (result) {
+        this.produtoService.delete(product.id).subscribe(() => {
+          this.produtoService.getAllProducts().subscribe((produtos) => {
+            this.produtos = produtos;
+          });
+        });
+      }
     })
   }
 }
