@@ -1,8 +1,16 @@
 {
   "products": [
     {
-      "id": "8e24",
-      "titulo": "Sapato M"
+      "titulo": "Sapato 45",
+      "id": "8e24"
+    },
+    {
+      "id": "25db",
+      "titulo": "Bolsa"
+    },
+    {
+      "id": "0bf0",
+      "titulo": "Bolsa Estilo"
     }
   ]
 }
