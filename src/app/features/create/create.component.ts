@@ -29,11 +29,7 @@ export class CreateComponent {
 
   onSubmit() {
     this.produtoService.post({titulo: this.form.controls.titulo.value}).subscribe(() => {
-      this.matSnackBar.open('Produto criado com sucesso', 'Fechar', {
-        duration: 3000,
-        horizontalPosition: 'right',
-        verticalPosition: 'top',
-      });
+      this.matSnackBar.open('Produto criado com sucesso', 'Fechar');
       this.form.reset();
       this.router.navigateByUrl('');
     })
