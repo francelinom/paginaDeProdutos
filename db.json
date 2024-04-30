@@ -1,12 +1,11 @@
 {
   "products": [
     {
-      "id": "1",
-      "titulo": "Product 1",
-      "preco": 10.99
+      "titulo": "Product 1 Testes",
+      "id": "1"
     },
     {
-      "titulo": "Testes editado",
+      "titulo": "Testes editado 2",
       "id": "8fc5"
     },
     {
@@ -24,6 +23,10 @@
     {
       "id": "a389",
       "titulo": "Sapato G"
+    },
+    {
+      "id": "fb85",
+      "titulo": "Novo Produto"
     }
   ]
 }

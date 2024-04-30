@@ -18,7 +18,7 @@ export class FormComponent implements OnInit{
 
   form!: FormGroup;
 
-  @Output() submit = new EventEmitter<Product>()
+  @Output() salvar = new EventEmitter<Product>()
 
   ngOnInit(): void {
     this.form = new FormGroup({
@@ -32,7 +32,7 @@ export class FormComponent implements OnInit{
 
   onSubmit() {
     const product = this.form.value as Product;
-    this.submit.emit(product);
+    this.salvar.emit(product);
   }
 
 }

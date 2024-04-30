@@ -1,10 +1,1 @@
-<form [formGroup]="form" class="form-container">
-  <div class="form-content-container">
-    <mat-form-field>
-      <mat-label>Título</mat-label>
-      <input type="text" matInput formControlName="titulo" placeholder="Título">
-    </mat-form-field>
-
-    <button type="button" mat-raised-button color="accent" (click)="onSubmit()">Salvar</button>
-  </div>
-</form>
+<app-form [product]="product" (salvar)="onSubmit($event)"></app-form>
