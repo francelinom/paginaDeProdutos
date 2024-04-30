@@ -5,11 +5,12 @@ import { ProductsService } from '../../shared/services/products.service';
 import { CardComponent } from './components/card/card.component';
 import { ActivatedRoute, Router, RouterLink } from '@angular/router';
 import { MatButtonModule } from '@angular/material/button';
+import { NoItemsComponent } from './components/no-items/no-items.component';
 
 @Component({
   selector: 'app-list',
   standalone: true,
-  imports: [CardComponent, RouterLink, MatButtonModule, ConfirmationDialogComponent],
+  imports: [CardComponent, RouterLink, MatButtonModule, ConfirmationDialogComponent, NoItemsComponent],
   templateUrl: './list.component.html',
   styleUrl: './list.component.css'
 })

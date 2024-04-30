@@ -3,5 +3,13 @@
 </div>
 
 @for (produto of produtos(); track produto.id) {
-  <app-card [produto]="produto" (edit)="onEdit(produto)" (deletar)="onDelete(produto)"></app-card>
+  @defer (on immediate) {
+    <app-card [produto]="produto" (edit)="onEdit(produto)" (deletar)="onDelete(produto)"></app-card>
+  } @placeholder {
+    <span>Carregando...</span>
+  }
+} @empty {
+    @defer (on immediate) {
+      <app-no-items></app-no-items>
+    }
 }
